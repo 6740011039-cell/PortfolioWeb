@@ -81,45 +81,37 @@ body {
   }
 }
 
-/* ================= HERO ================= */
+/* ================= HERO (DESKTOP FIX) ================= */
 #hero {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   align-items: center;
-  padding: 80px 40px;
-  gap: 40px;
+  padding: 100px 60px;
+  gap: 60px;
+  min-height: 90vh;
+}
+
+#hello {
+  max-width: 520px;
 }
 
 #hello h2 {
-  font-size: 28px;
-  margin-bottom: 6px;
-}
-
-#hello button {
-  margin-top: 20px;
-  padding: 12px 28px;
-  border-radius: 30px;
-  border: none;
-  background: linear-gradient(90deg, #7b2ff7, #f107a3);
-  color: #fff;
-  font-weight: 600;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-#hello button:hover {
-  transform: translateY(-3px);
+  font-size: 34px;
+  line-height: 1.4;
 }
 
 .hero-img {
-  width: 50%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .hero-img img {
-  width: 80%;
-  border-radius: 20px;
+  width: 100%;
+  max-width: 420px;   /* สำคัญมาก */
+  border-radius: 24px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.25);
 }
+
 
 /* ================= ABOUT & SKILLS ================= */
 .about,
@@ -321,8 +313,8 @@ form button {
 }
 
 form button:hover {
-  transform: translateY(-4px);          /* ขยับขึ้น */
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ================= FOOTER ================= */
@@ -333,43 +325,37 @@ footer {
   font-size: 14px;
 }
 
+/* ===== MAIN BUTTON ===== */
+.btn-main {
+  padding: 12px 30px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #7b2ff7, #f107a3);
+  color: #fff;
+  border: none;
+  margin-top: 24px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-main:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+@media (max-width: 768px) {
   #hero {
-    flex-direction: column-reverse;
+    grid-template-columns: 1fr;
+    padding: 60px 24px;
     text-align: center;
   }
 
-  .hero-img {
-    width: 100%;
-    justify-content: center;
+  #hello {
+    max-width: 100%;
   }
 
   .hero-img img {
-    width: 70%;
-  }
-
-  .split {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .split img,
-  .split div {
-    width: 100%;
+    max-width: 280px;
   }
 }
-
-/* Small Mobile */
-@media (max-width: 480px) {
-  header h1 {
-    font-size: 18px;
-  }
-
-  #hello h2 {
-    font-size: 22px;
-  }
-
-  .work-card img {
-    height: 150px;
-  }
-}
-
