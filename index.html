@@ -8,21 +8,22 @@
 </head>
 <body>
 
+  <nav class="navbar">
+  <div class="logo">Panwasa Khaewsawat</div>
 
-  <div id="container">
+  <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 
-    <!-- Header -->
-    <header>
-      <h1>Panwasa Khaewsawat</h1>
-      <ul class="menu">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#interests">Interests</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </header>
+  <div class="menu-toggle">☰</div>
+</nav>
+
+</header>
 
     <!-- Hero Section -->
     <section id="hero">
@@ -169,6 +170,14 @@
   </footer>
 
 </div>
+<script>
+  const toggle = document.querySelector(".menu-toggle");
+  const navLinks = document.querySelector(".nav-links");
+
+  toggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
+</script>
 
 </body>
 </html>

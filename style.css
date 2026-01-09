@@ -14,44 +14,71 @@ body {
   color: #333;
 }
 
-/* ================= HEADER ================= */
-header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  padding: 18px 40px;
-  background: linear-gradient(90deg, #7b2ff7, #f107a3, #00c6ff);
+/* ===== NAVBAR ===== */
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-header h1 {
+  padding: 18px 40px;
+  background: linear-gradient(90deg, #8a2be2, #ff2ea6, #00bfff);
   color: #fff;
-  font-size: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-#container {
-  max-width: 1200px;
-  margin: auto;
-  background: #fff;
+.logo {
+  font-size: 22px;
+  font-weight: bold;
 }
 
-ul.menu {
+.nav-links {
   list-style: none;
   display: flex;
-  gap: 22px;
+  gap: 25px;
 }
 
-.menu li a {
+.nav-links li a {
   text-decoration: none;
-  font-size: 14px;
-  color: #fff;
+  color: white;
   font-weight: 500;
 }
 
-.menu li a:hover {
-  opacity: 0.8;
+/* ปุ่มเมนูมือถือ */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 220px;
+    padding: 20px;
+    gap: 15px;
+    display: none;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    border-radius: 0 0 0 15px;
+  }
+
+  .nav-links li a {
+    color: #333;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
 
 /* ================= HERO ================= */
@@ -306,28 +333,6 @@ footer {
   font-size: 14px;
 }
 
-/* ================= RESPONSIVE ================= */
-
-/* Tablet */
-@media (max-width: 1024px) {
-  #hero,
-  .split {
-    padding: 60px 24px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  ul.menu {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
   #hero {
     flex-direction: column-reverse;
     text-align: center;
@@ -367,3 +372,4 @@ footer {
     height: 150px;
   }
 }
+
