@@ -77,7 +77,7 @@
 </section>
 
 <section id="skills" class="skills">
-  <!-- Skill bars อยู่ซ้าย -->
+
   <div class="skills-text">
     <h2>Skills</h2>
 
@@ -103,7 +103,6 @@
     </div>
   </div>
 
-  <!-- รูปอยู่ขวา -->
   <div class="skills-img">
     <img src="images/skills.jpg" alt="Skills Illustration">
   </div>
@@ -126,7 +125,7 @@
       <span>HTML / CSS</span>
     </a>
 
-    <a href="https://sites.google.com/psu.ac.th/homework039/home"
+    <a href="https://sites.google.com/psu.ac.th/homework039/Home"
        target="_blank"
        class="work-card">
       <img src="images/website_homework.png" alt="Homework Website">
@@ -204,7 +203,6 @@
 </footer>
 
 <script>
-  /* Toggle Mobile Menu */
 const toggle = document.querySelector(".menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
@@ -212,14 +210,13 @@ toggle.addEventListener("click", () => {
   navLinks.classList.toggle("show");
 });
 
-/* Active link on scroll */
 const sections = document.querySelectorAll("section");
 const navItems = document.querySelectorAll(".nav-links li a");
 
 window.addEventListener("scroll", () => {
   let current = "";
   sections.forEach(section => {
-    const sectionTop = section.offsetTop - 120; // ปรับเลื่อนก่อนถึง section
+    const sectionTop = section.offsetTop - 120;
     if (pageYOffset >= sectionTop) {
       current = section.getAttribute("id");
     }
@@ -233,7 +230,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-/* Active link on click & close mobile menu */
 navItems.forEach(link => {
   link.addEventListener("click", () => {
     navItems.forEach(l => l.classList.remove("active"));
@@ -245,7 +241,6 @@ navItems.forEach(link => {
 </script>
 
 <script>
-/* scroll animation */
 const faders = document.querySelectorAll(".fade-section");
 
 const observer = new IntersectionObserver(entries => {
