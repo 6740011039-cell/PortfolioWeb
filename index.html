@@ -8,7 +8,7 @@
 <body>
 
   <nav class="navbar">
-  <div class="logo">Panwasa Khiewsawat</div>
+  <div class="logo">Portfolio</div>
 
   <ul class="nav-links">
     <li><a href="#hero">Home</a></li>
@@ -23,33 +23,31 @@
 </nav>
 
     <section id="hero">
-      <div id="hello">
-        <h2>Hello,👋</h2>
-        <h2>I’m Feen.</h2>
-        <h2>An Information Technology student and photography enthusiast.</h2>
-        <button class="btn-main" onclick="location.href='#contact'">
-  Contact Me
-</button>
+  <div class="hero-center">
+    <h2>Hello,👋 </h2>
+    <h2>I’m Panwasa Khiewsawat,</h2>
+    <h2 class="hero-sub">
+      an IT student at SCIT, Prince of Songkla University.
+    </h2>
 
-      </div>
-
-    <div class="hero-img">
-      <img src="images/profile.jpg" alt="Feen Profile">
-    </div>
-  </section>
+    <button class="btn-main" onclick="location.href='#about'">
+      Explore My Profile
+    </button>
+  </div>
+</section>
 
   <section id="about" class="about">
-  <div class="about-img">
-    <img src="https://img.freepik.com/free-vector/online-photography-courses-isometric-concept_52683-33743.jpg" alt="About Me">
-  </div>
+  <div class="about-img profile-glow">
+  <img src="images/profile.jpg" alt="Feen Profile">
+</div>
   <div class="about-content">
     <h2>About Me</h2>
     <p class="about-intro">
       ฉันชื่อ <strong>พรรวษา เขียวสวัสดิ์</strong> (MISS PANWASA KHIEWSAWAT)  
       เป็นนักศึกษาสาขาเทคโนโลยีสารสนเทศ  
-      สนใจการพัฒนาเว็บไซต์ งานออกแบบ และการเล่าเรื่องผ่านภาพถ่าย
+      สนใจการพัฒนาเว็บไซต์ งานออกแบบ และการถ่ายภาพ
     </p>
-    <div class="about-block">
+    <div class="info-card">
       <h3>🎓 Education</h3>
       <p>
         สำเร็จการศึกษาระดับประกาศนียบัตรวิชาชีพ (ปวช.)  
@@ -57,7 +55,7 @@
         ปีการศึกษา 2567
       </p>
     </div>
-    <div class="about-block">
+    <div class="info-card">
       <h3>💻 Skills & Talents</h3>
       <p>
         มีทักษะด้านคอมพิวเตอร์ การออกแบบสื่อดิจิทัล  
@@ -65,7 +63,7 @@
         พร้อมเรียนรู้เทคโนโลยีใหม่ ๆ
       </p>
     </div>
-    <div class="about-block">
+    <div class="info-card">
       <h3>👤 Personal Information</h3>
       <ul class="about-list">
         <li><strong>Student ID:</strong> 6740011039</li>
@@ -78,33 +76,36 @@
 </section>
 
 <section id="skills" class="skills">
-
+  <!-- Skill bars อยู่ซ้าย -->
   <div class="skills-text">
     <h2>Skills</h2>
+
     <div class="skill">
-      <span>HTML / CSS</span>
+      <span>💻 HTML / CSS</span>
       <div class="bar">
         <div class="bar-fill" style="width:60%"></div>
       </div>
     </div>
+
     <div class="skill">
-      <span>Graphic Design</span>
+      <span>🎨 Graphic Design</span>
       <div class="bar">
         <div class="bar-fill" style="width:80%"></div>
       </div>
     </div>
+
     <div class="skill">
-      <span>Photography</span>
+      <span>📸 Photography</span>
       <div class="bar">
         <div class="bar-fill" style="width:90%"></div>
       </div>
     </div>
   </div>
 
+  <!-- รูปอยู่ขวา -->
   <div class="skills-img">
-    <img src="https://img.freepik.com/free-vector/isometric-world-youth-skills-day-illustration_23-2148959919.jpg" alt="Skills">
+    <img src="images/skills.jpg" alt="Skills Illustration">
   </div>
-
 </section>
 
 <section id="work" class="work">
@@ -172,43 +173,102 @@
   </div>
 </section>
 
-  <section id="contact">
-  <!-- คำอธิบาย -->
-  <div class="contact-scan-text">
-    <h2>Scan to Contact Me</h2>
-    <p>สามารถติดต่อฉันผ่านช่องทางด้านล่างได้โดยการสแกน QR Code</p>
+  <section id="contact" class="contact-section fade-section">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea rows="4" placeholder="Your Message"></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</section>
+
+<footer class="footer">
+  <div class="footer-icons">
+    <a href="https://www.facebook.com/share/17rxa4BjTc/?mibextid=wwXIfr" target="_blank">
+      <img src="images/facebook.PNG" alt="Facebook">
+    </a>
+
+    <a href="https://www.instagram.com/feen.pws" target="_blank">
+      <img src="images/instagram.JPG" alt="Instagram">
+    </a>
+
+    <a href="https://line.me/ti/p/j_q6gxXVwv" target="_blank">
+      <img src="images/line.PNG" alt="Line">
+    </a>
   </div>
 
-
-  <!-- การ์ด QR -->
-  <div class="contact-box">
-
-  <a class="contact-item" href="https://www.facebook.com/share/17rxa4BjTc/?mibextid=wwXIfr" target="_blank">
-    <img src="images/facebook.PNG" alt="Facebook QR">
-  </a>
-
-  <a class="contact-item" href="https://www.instagram.com/feen.pws" target="_blank">
-    <img src="images/instagram.JPG" alt="Instagram QR">
-  </a>
-
-  <a class="contact-item" href="https://line.me/ti/p/j_q6gxXVwv" target="_blank">
-    <img src="images/line.PNG" alt="Line QR">
-  </a>
-
-</div>
-
-
-  <footer>
-    <p>© 6740011039 Panwasa Khiewsawat</p>
-  </footer>
+  <p>© 6740011039 Panwasa Khiewsawat</p>
+</footer>
 
 <script>
-  const toggle = document.querySelector(".menu-toggle");
-  const navLinks = document.querySelector(".nav-links");
+  /* Toggle Mobile Menu */
+const toggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-  toggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+toggle.addEventListener("click", () => {
+  navLinks.classList.toggle("show");
+});
+
+/* Active link on scroll */
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav-links li a");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 120; // ปรับเลื่อนก่อนถึง section
+    if (pageYOffset >= sectionTop) {
+      current = section.getAttribute("id");
+    }
   });
+
+  navItems.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+/* Active link on click & close mobile menu */
+navItems.forEach(link => {
+  link.addEventListener("click", () => {
+    navItems.forEach(l => l.classList.remove("active"));
+    link.classList.add("active");
+    navLinks.classList.remove("show"); // ปิดเมนู mobile หลังคลิก
+  });
+});
+
+</script>
+
+<script>
+/* scroll animation */
+const faders = document.querySelectorAll(".fade-section");
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
+    }
+  });
+}, { threshold: 0.15 });
+
+faders.forEach(el => observer.observe(el));
+</script>
+
+<script>
+const skills = document.querySelectorAll(".skill");
+const skillObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add("show");
+    }
+  });
+},{ threshold: 0.3 });
+
+skills.forEach(s => skillObserver.observe(s));
 </script>
 
 </body>
