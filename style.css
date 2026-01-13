@@ -421,6 +421,33 @@ p {
   box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
+.info-card {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform 0.45s cubic-bezier(.34,1.56,.64,1),
+    box-shadow 0.45s ease,
+}
+
+.info-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow:
+    0 22px 45px rgba(241,7,163,0.25),
+    0 0 0 2px rgba(123,47,247,0.15);
+  background: rgba(255,255,255,0.95);
+}
+
+.info-card:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .info-card:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow: 0 14px 30px rgba(241,7,163,0.18);
+  }
+}
+
 .skills {
   display: flex;
   align-items: center;
